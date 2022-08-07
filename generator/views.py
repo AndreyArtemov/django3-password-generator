@@ -18,3 +18,6 @@ def password(reguest):
     for x in range(lenght):
         thepassword += random.choice(characters)
     return render(reguest, 'generator/password.html', {'password':thepassword})
+def my_page(reguest):
+
+    return render(reguest, 'generator/my_page.html')
